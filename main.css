@@ -1,0 +1,64 @@
+/* variáveis de cor */
+:root {
+    --green: #00ff00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/*  * é universal e se aplica a todos os elementos da página 
+(exceto quando um seletor de elemento mais específico o substitui). */
+* {
+    color: var(--fontColor);
+    font-family: Helvetica;
+}
+
+/* Lista completa */
+body {
+background: var(--bg);
+}
+
+
+ul {
+    font-family: helvética;    
+}
+
+
+li {
+    list-style: circle;
+}
+
+
+.list {
+    list-style: square;
+}
+
+
+/* mudança de temas*/
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnbg: var(--black);
+    --btnfontColor: var(--green);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnbg: var(--green);
+    --btnfontColor: var(--black);
+}
+
+/* botão */
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 350px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnfontColor);
+    background-color: var(--btnbg);
+}
+
+.btn:focus { outline-style: none; }
